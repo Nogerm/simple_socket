@@ -19,7 +19,7 @@ io.on('connection', socket => {
     console.log('socket connected');
 });
 
-app.post('/start socket', (req, res) => {
+app.post('/start', (req, res) => {
     console.log("start socket");
 
     const fakeData1 = {
