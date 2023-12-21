@@ -16,7 +16,11 @@ http.listen(port, () => {
 });
 
 io.on('connection', socket => {
-    console.log('server connected');
+    console.log('socket connected');
+});
+
+app.post('/start socket', (req, res) => {
+    console.log("start socket");
 
     const fakeData1 = {
         categoryId: "station",
@@ -33,6 +37,7 @@ io.on('connection', socket => {
     }
 
     const fakeDataJob = setInterval(() => {
+        console.log("emit data");
         io.emit('data', fakeData1)
     }, 1000);
 });
