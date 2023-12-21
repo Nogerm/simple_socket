@@ -18,11 +18,8 @@
   "name": "simple_socket",
   "version": "1.0.0",
   "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "mocha"
+    "start": "node ."
   },
   "repository": {
     "type": "git",
